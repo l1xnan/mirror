@@ -51,10 +51,15 @@ jobs:
         # https://github.com/actions-rs/toolchain
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: nightly
+          toolchain: stable
           override: true
           profile: minimal
           target: ${{ matrix.target }}
+
+      - name: Setup | openssl
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get install libssl-dev
 
       - name: Build | Build
         # https://github.com/actions-rs/cargo
