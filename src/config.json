@@ -1,0 +1,63 @@
+{
+  "pypi": {
+    "name": "pypi",
+    "language": "Python",
+    "cmd": "pip config set global.index-url {0}",
+    "default": {
+      "index_url": "https://files.pythonhosted.org"
+    },
+    "mirrors": [
+      {
+        "name": "bfsu",
+        "label": "北外",
+        "args": "https://mirrors.bfsu.edu.cn/pypi/web/simple",
+        "test": "https://mirrors.bfsu.edu.cn/pypi/web/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      },
+      {
+        "name": "ustc",
+        "label": "科大",
+        "test": "https://mirrors.ustc.edu.cn/pypi/web/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      },
+      {
+        "name": "douban",
+        "label": "豆瓣",
+        "test": "https://pypi.doubanio.com/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      },
+      {
+        "name": "huawei",
+        "label": "华为",
+        "test": "https://repo.huaweicloud.com/repository/pypi/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      },
+      {
+        "name": "tuna",
+        "label": "清华",
+        "test": "https://pypi.tuna.tsinghua.edu.cn/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      },
+      {
+        "name": "aliyun",
+        "label": "阿里",
+        "args": "https://mirrors.aliyun.com/pypi/simple",
+        "test": "https://mirrors.aliyun.com/pypi/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+      }
+    ]
+  },
+  "npm": {
+    "name": "npm",
+    "language": "Nodejs",
+    "cmd": "npm config set registry {0}",
+    "mirrors": [
+      {
+        "name": "taobao",
+        "label": "淘宝",
+        "args": "https://registry.npmmirror.com",
+        "test": "https://registry.npmmirror.com/typescript/-/typescript-5.0.4.tgz"
+      },
+      {
+        "name": "huawei",
+        "label": "华为",
+        "args": "https://repo.huaweicloud.com/repository/npm",
+        "test": "https://repo.huaweicloud.com/repository/npm/typescript/-/typescript-5.0.4.tgz"
+      }
+    ]
+  }
+}

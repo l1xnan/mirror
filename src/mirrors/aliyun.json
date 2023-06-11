@@ -1,0 +1,11 @@
+{
+  "name": "aliyun",
+  "label": "阿里",
+  "version": "1.0.0",
+  "mirrors": {
+    "pypi": {
+      "args": "https://mirrors.aliyun.com/pypi/simple",
+      "test": "https://mirrors.aliyun.com/pypi/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
+    }
+  }
+}
