@@ -16,21 +16,25 @@
       {
         "name": "ustc",
         "label": "科大",
+        "args": "https://mirrors.ustc.edu.cn/pypi/web/simple",
         "test": "https://mirrors.ustc.edu.cn/pypi/web/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
       },
       {
         "name": "douban",
         "label": "豆瓣",
+        "args": "https://pypi.doubanio.com/simple",
         "test": "https://pypi.doubanio.com/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
       },
       {
         "name": "huawei",
         "label": "华为",
+        "args": "https://repo.huaweicloud.com/repository/pypi/simple",
         "test": "https://repo.huaweicloud.com/repository/pypi/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
       },
       {
         "name": "tuna",
         "label": "清华",
+        "args": "https://pypi.tuna.tsinghua.edu.cn/simple",
         "test": "https://pypi.tuna.tsinghua.edu.cn/packages/6d/c1/84a0347e6cf20a049259dceabbea70afb469248c8e049a3d06714a494844/pandas-2.0.0-cp311-cp311-win_amd64.whl"
       },
       {
