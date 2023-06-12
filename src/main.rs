@@ -38,6 +38,8 @@ enum Commands {
     Pypi(MirrorArgs),
     /// 配置 nodejs npm
     Npm(MirrorArgs),
+    /// 配置 golang proxy
+    Go(MirrorArgs),
 
     #[command(external_subcommand)]
     External(Vec<OsString>),
@@ -140,8 +142,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let conf = CONFIG.npm.as_ref().unwrap();
             sub_command(command, conf);
         }
+        Commands::Go(sub) => {
+            let command = sub.command.unwrap();
+            let conf = CONFIG.go.as_ref().unwrap();
+            sub_command(command, conf);
+        }
         Commands::External(args) => {
             println!("Calling out to {:?} with {:?}", &args[0], &args[1..]);
+        }
+        _ => {
+            println!("Not Support!")
         }
     }
 

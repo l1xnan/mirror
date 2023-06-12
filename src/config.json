@@ -63,5 +63,30 @@
         "test": "https://repo.huaweicloud.com/repository/npm/typescript/-/typescript-5.0.4.tgz"
       }
     ]
+  },
+  "go": {
+    "name": "golang",
+    "language": "Go",
+    "cmd": "go env -w {0}",
+    "mirrors": [
+      {
+        "name": "qiniu",
+        "label": "七牛云",
+        "args": "https://goproxy.cn,direct",
+        "test": ""
+      },
+      {
+        "name": "huawei",
+        "label": "华为",
+        "args": "https://repo.huaweicloud.com/repository/goproxy/",
+        "test": ""
+      },
+      {
+        "name": "aliyun",
+        "label": "阿里云",
+        "args": "https://mirrors.aliyun.com/goproxy/",
+        "test": ""
+      }
+    ]
   }
 }

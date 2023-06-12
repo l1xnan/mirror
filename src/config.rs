@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 pub struct Config {
     pub pypi: Option<SubConfig>,
     pub npm: Option<SubConfig>,
+    pub go: Option<SubConfig>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
